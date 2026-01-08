@@ -44,14 +44,6 @@ h1, h2 {
   padding: 3rem 10%;
 }
 
-@media (max-width: 600px) {
-  .section {
-    padding: 2rem 1rem;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-}
-
 .section-flex {
   display: flex;
   gap: 2rem;
@@ -60,20 +52,10 @@ h1, h2 {
 
 .section-flex.reverse {
   flex-direction: row-reverse;
-  @media (max-width: 600px) {
-    .section-flex {
-      flex-direction: column;
-    }
-  }
 }
 
 .side-img {
   border-radius: 10px;
-  @media (max-width: 600px) {
-    .section-flex {
-      flex-direction: column;
-    }
-  }
 }
 
 .center-img {
@@ -84,10 +66,11 @@ h1, h2 {
 
 .gallery {
   display: flex;
-  justify-content: center; /* ← これが中央揃えの決め手 */
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
+
 .spec-table {
   width: 100%;
   border-collapse: collapse;
@@ -96,4 +79,21 @@ h1, h2 {
 .spec-table th, .spec-table td {
   border: 1px solid #333;
   padding: 10px;
+}
+
+/* ▼ スマホ用レイアウト（ここが重要） */
+@media (max-width: 600px) {
+  .section {
+    padding: 2rem 1rem;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .section-flex {
+    flex-direction: column;
+  }
+
+  .section-flex.reverse {
+    flex-direction: column;
+  }
 }
