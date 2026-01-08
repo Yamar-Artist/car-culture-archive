@@ -60,10 +60,20 @@ h1, h2 {
 
 .section-flex.reverse {
   flex-direction: row-reverse;
+  @media (max-width: 600px) {
+    .section-flex {
+      flex-direction: column;
+    }
+  }
 }
 
 .side-img {
   border-radius: 10px;
+  @media (max-width: 600px) {
+    .section-flex {
+      flex-direction: column;
+    }
+  }
 }
 
 .center-img {
