@@ -1,0 +1,127 @@
+/* 全体背景（カーボン柄） */
+.lfa-container {
+  background-image: url("/images/carbon.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  color: #f5f5f5;
+  padding-bottom: 4rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ヒーローセクション */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.hero-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+}
+
+.hero-sub {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+/* セクション */
+.section {
+  padding: 3rem 10%;
+}
+
+.section h2 {
+  color: #fff;
+  border-left: 4px solid #c00000;
+  padding-left: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* 歴史セクション */
+.history-block {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #c00000;
+  line-height: 1.8;
+}
+
+.history-block h1,
+.history-block h2,
+.history-block h3,
+.history-block h4,
+.history-block h5,
+.history-block h6 {
+  color: #fff;
+}
+
+/* A案：左右交互レイアウト */
+.engine-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.engine-row.left {
+  flex-direction: row;
+}
+
+.engine-row.right {
+  flex-direction: row-reverse;
+}
+
+.engine-img img {
+  border-radius: 10px;
+  border: 3px solid #c00000;
+}
+
+.engine-text {
+  width: 45%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #c00000;
+}
+
+.engine-text h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.engine-text p {
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* 戻るリンク */
+.back-link {
+  text-align: center;
+  padding: 2rem;
+}
+
+.back-link a {
+  color: #c00000;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  color: #ff4d4d;
+}

@@ -1,26 +1,29 @@
-@import "tailwindcss";
+/* ===== globals.css ===== */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 共通フォント */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), var(--font-geist-mono), sans-serif;
+  line-height: 1.6;
+  background: #000; /* ページごとのCSSで上書きされる前提 */
+  color: #fff;
+}
+
+/* リンク初期化 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 画像初期化 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

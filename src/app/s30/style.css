@@ -1,0 +1,121 @@
+/* 全体背景（V型エンジンページと統一したい場合） */
+.s30-container {
+  padding: 2rem;
+  background-image: url("/images/carbon.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  color: #f5f5f5;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* S30専用 Hero セクション */
+.s30-hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.s30-hero-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.s30-hero-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #000; /* ← 黒文字 */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.s30-hero-sub {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #222;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+/* タイトル */
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-shadow: 3px 3px 1px #c00000;
+}
+
+/* A案：左右交互レイアウト */
+.engine-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.engine-row.left {
+  flex-direction: row;
+}
+
+.engine-row.right {
+  flex-direction: row-reverse;
+}
+
+/* 画像の赤枠 */
+.engine-img img {
+  border-radius: 10px;
+  border: 3px solid #c00000; /* ← 赤枠復活 */
+}
+
+/* 説明文の赤ライン */
+.engine-text {
+  width: 45%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #c00000; /* ← 赤ライン復活 */
+}
+
+.engine-text h1,
+.engine-text h2,
+.engine-text h3,
+.engine-text h4 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.engine-text p,
+.engine-text li {
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* リンクの赤アクセント */
+.engine-text a {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* 戻るリンク */
+.back-link {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.back-link a {
+  font-size: 1.2rem;
+  color: #c00000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  color: #ff4d4d;
+}

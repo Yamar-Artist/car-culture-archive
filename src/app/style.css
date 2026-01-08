@@ -1,0 +1,78 @@
+/* ===== style.css（トップページ専用） ===== */
+
+/* 全体背景（カーボン柄） */
+.home-container {
+  background-image: url("/images/carbon.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+/* Hero セクション */
+.home-hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.home-hero-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.home-hero-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 3px 3px 1px #c00000;
+}
+
+.home-hero-sub {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+/* カードリンク */
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.home-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  width: 280px;
+  border-radius: 10px;
+  border-left: 4px solid #c00000;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.home-card:hover {
+  background: rgba(192, 0, 0, 0.7);
+  transform: translateY(-5px);
+}
+
+.home-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.home-card p {
+  margin: 0;
+  color: #ddd;
+  font-size: 1rem;
+}
