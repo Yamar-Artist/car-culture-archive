@@ -17,7 +17,7 @@ export default function Page() {
           className="hero-img"
         />
         <h1 className="hero-title">LEXUS LFA</h1>
-        <p className="hero-sub">情熱と技術の結晶、日本が生んだスーパーカー</p>
+        <p className="hero-sub">職人の情熱と技術の結晶 日本が生んだスーパーカー</p>
       </section>
 
       {/* ② LFAとは */}
