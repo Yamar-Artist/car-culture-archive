@@ -5,7 +5,6 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <>
     <main className="lfa-container">
 
       <section className="hero">
@@ -196,6 +195,5 @@ export default function Page() {
         <Link href="/">トップページへ戻る</Link>
       </div> 
     </main>
-    </>
   );
 }
