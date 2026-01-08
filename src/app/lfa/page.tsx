@@ -192,9 +192,9 @@ export default function Page() {
           </tbody>
         </table>
       </section>
+      <div className="back-link">
+        <Link href="/">トップページへ戻る</Link>
+      </div> 
     </main>
-    <div className="back-link">
-      <Link href="/">トップページへ戻る</Link>
-    </div>    </>
-  );
+    </>);
 }
