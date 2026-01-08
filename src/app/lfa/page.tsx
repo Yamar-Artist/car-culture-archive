@@ -196,5 +196,6 @@ export default function Page() {
         <Link href="/">トップページへ戻る</Link>
       </div> 
     </main>
-    </>);
+    </>
+  );
 }
