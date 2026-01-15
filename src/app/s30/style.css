@@ -121,12 +121,10 @@
 }
 
 @media (max-width: 600px) {
-  /* セクションの余白調整 */
   .s30-container {
     padding: 1rem;
   }
 
-  /* 横並び → 縦並びに変更 */
   .engine-row,
   .engine-row.left,
   .engine-row.right {
@@ -135,18 +133,20 @@
     padding: 1rem;
   }
 
-  /* 画像をスマホ幅にフィットさせる */
   .engine-img img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
-  /* 文章の幅を100%にして読みやすく */
   .engine-text {
     width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.7;
   }
 
-  /* 文字サイズと行間もスマホ向けに */
   .engine-text p,
   .engine-text li {
     font-size: 16px;
