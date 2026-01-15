@@ -7,11 +7,13 @@
   box-sizing: border-box;
 }
 
-/* 共通フォント */
 body {
   font-family: var(--font-geist-sans), var(--font-geist-mono), sans-serif;
   line-height: 1.6;
-  background: #000; /* ページごとのCSSで上書きされる前提 */
+  background-image: url("/images/carbon.png");
+  background-size: 60px 60px; /* ← カーボン柄を細かくして明確に見せる */
+  background-repeat: repeat;
+  background-color: #0d0d0d; /* ← 真っ黒より少し明るい方が柄が見える */
   color: #fff;
 }
 
