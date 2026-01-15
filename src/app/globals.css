@@ -10,12 +10,25 @@
 body {
   background-color: #0d0d0d;
   background-image:
+    /* 光沢レイヤー（上に薄いハイライト） */
+    linear-gradient(
+      rgba(255,255,255,0.08) 0%,
+      rgba(255,255,255,0.02) 50%,
+      rgba(0,0,0,0.3) 100%
+    ),
+    /* カーボン柄（下の模様） */
     linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
     linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.05) 75%),
     linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.05) 75%);
-  background-size: 20px 20px;
+  background-size: 
+    100% 100%, /* 光沢レイヤー */
+    20px 20px,
+    20px 20px,
+    20px 20px,
+    20px 20px;
   background-repeat: repeat;
+  color: #fff;
 }
 
 /* リンク初期化 */
