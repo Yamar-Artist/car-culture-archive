@@ -125,3 +125,21 @@
 .back-link a:hover {
   color: #ff4d4d;
 }
+
+@media (max-width: 600px) {
+  .section {
+    padding: 2rem 1rem;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .section-flex,
+  .section-flex.reverse {
+    flex-direction: column;
+  }
+
+  .side-img {
+    width: 100%;
+    height: auto;
+  }
+}

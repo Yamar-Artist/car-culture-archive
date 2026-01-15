@@ -76,3 +76,19 @@
   color: #ddd;
   font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+  .section-flex,
+  .section-flex.reverse {
+    flex-direction: column;
+  }
+
+  .side-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+}

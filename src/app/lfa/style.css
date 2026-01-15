@@ -81,7 +81,6 @@ h1, h2 {
   padding: 10px;
 }
 
-/* ▼ スマホ用レイアウト（ここが重要） */
 @media (max-width: 600px) {
   .section {
     padding: 2rem 1rem;
@@ -89,11 +88,13 @@ h1, h2 {
     line-height: 1.6;
   }
 
-  .section-flex {
+  .section-flex,
+  .section-flex.reverse {
     flex-direction: column;
   }
 
-  .section-flex.reverse {
-    flex-direction: column;
+  .side-img {
+    width: 100%;
+    height: auto;
   }
 }
