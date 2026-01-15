@@ -1,12 +1,7 @@
 /* ===== style.css（トップページ専用） ===== */
 
-/* 全体背景（カーボン柄） */
 .home-container {
-  background-image: url("/images/carbon.png");
-  background-size: 200px 200px;
-  background-repeat: repeat;
-  color: #fff;
-  padding-bottom: 4rem;
+  background: transparent;
 }
 
 /* Hero セクション */

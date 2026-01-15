@@ -1,8 +1,5 @@
 .lfa-container {
-  background: #0d0d0d;
-  color: #d0d0d0;
-  padding-bottom: 4rem;
-  font-family: "Noto Sans JP", sans-serif;
+  background: transparent;
 }
 
 h1, h2 {

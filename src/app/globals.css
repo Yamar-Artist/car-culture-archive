@@ -8,13 +8,14 @@
 }
 
 body {
-  font-family: var(--font-geist-sans), var(--font-geist-mono), sans-serif;
-  line-height: 1.6;
-  background-image: url("/images/carbon.png");
-  background-size: 60px 60px; /* ← カーボン柄を細かくして明確に見せる */
+  background-color: #0d0d0d;
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.05) 75%);
+  background-size: 20px 20px;
   background-repeat: repeat;
-  background-color: #0d0d0d; /* ← 真っ黒より少し明るい方が柄が見える */
-  color: #fff;
 }
 
 /* リンク初期化 */
