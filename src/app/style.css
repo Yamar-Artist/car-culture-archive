@@ -86,4 +86,24 @@
   .text-box {
     width: 100%;
   }
+  
+  .home-hero-title {
+    font-size: 2rem;           /* タイトル文字を小さく */
+    top: 35%;                  /* 位置を少し上に */
+    text-shadow: 2px 2px 1px #c00000;
+    padding: 0 1rem;           /* 画面端で切れないよう左右に余白 */
+    line-height: 1.2;
+  }
+
+  .home-hero-sub {
+    font-size: 1rem;           /* サブタイトルも縮小 */
+    top: 55%;                  /* 位置はやや下めのままでもOK */
+    padding: 0 1rem;
+    line-height: 1.3;
+  }
+
+  .home-hero-img {
+    /* 必要なら高さを少し縮める or トリミング調整 */
+    object-fit: cover;
+  }
 }
